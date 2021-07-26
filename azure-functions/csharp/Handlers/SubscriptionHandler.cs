@@ -40,7 +40,6 @@ namespace Company.Sales.Api.Handlers
             {
                 return new OkObjectResult(subscriptions);
             }
-            
         }
 
         [FunctionName("CreateSubscription")]

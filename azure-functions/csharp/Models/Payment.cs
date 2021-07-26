@@ -19,5 +19,8 @@ namespace Company.Sales.Api.Models
 
         [JsonProperty("amount")]
         public decimal Amount { get; set; }
+
+        [JsonProperty("emailAddress")]
+        public string EmailAddress { get; set; }
     }
 }
