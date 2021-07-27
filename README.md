@@ -2,7 +2,7 @@
 
 This repo consists of a set of demo applications that supplement the technical briefings around Azure application development services.
 
-* [Azure Functions](/azure_functions)
+* [Azure Functions](./azure_functions)
 
 
 ## Contributing
