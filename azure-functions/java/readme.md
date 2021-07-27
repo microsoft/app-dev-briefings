@@ -1,24 +1,6 @@
 # Azure Functions Java Examples
 This is a collection of Azure functions examples.
 
-## Azure Setup
-The following services must be set up:
-* Function App
-  * App settings:
-    * DatabaseName: Sales
-    * CosmosConnectionStr: cosmos_connection_string
-    * ServiceBusConnectionStr: service_bus_connection_string
-* Storage Account
-* Cosmos Core API Account
-  * Database: Sales
-    * Container: Customers
-    * Container: Subscriptions
-    * Container: Payments
-* Application Insights
-* Service Bus
-  * Queue: subscription-payments
-
-
 ## Local Development
 ### Setup
 Ensure you have:
@@ -34,7 +16,8 @@ Ensure you have:
     "FUNCTIONS_WORKER_RUNTIME": "java",
     "DatabaseName": "Sales",
     "CosmosConnectionStr": "<cosmos connection string>",
-    "ServiceBusConnectionStr": "<service bus connection string>"
+    "ServiceBusConnectionStr": "<service bus connection string>",
+    "PaymentQueue": "subscription-payments"
   }
 }
 ```
