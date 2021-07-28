@@ -1,6 +1,7 @@
 package com.company.sales.api.handlers;
 
-import java.util.Date;
+
+import java.time.Instant;
 import java.util.UUID;
 
 import com.company.sales.api.models.*;
@@ -58,7 +59,7 @@ public class PaymentHandler {
         payment.id = UUID.randomUUID();
         payment.customerId = subscription.customerId;
         payment.subscriptionId = subscription.id;
-        payment.timestamp = new Date();
+        payment.timestamp = Instant.now().toString();
         payment.amount = subscription.price;
         payment.emailAddress = customer.emailAddress;
 
